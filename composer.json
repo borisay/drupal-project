@@ -26,10 +26,15 @@
                     "reference": "2.6.3"
                 }
             }
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/borisay/fibonacci_light.git"
         }
     ],
     "require": {
         "php": ">=7.1",
+        "borisay/fibonacci_light": "dev-master",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
@@ -89,11 +94,12 @@
         "drupal/webform": "^5.2",
         "drupal/webform_views": "^5.0@alpha",
         "drush/drush": "^9.0.0",
+        "twbs/bootstrap-sass": "^3.4",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3",
-        "zaporylie/composer-drupal-optimizations": "^1.0",
-        "woothemes/flexslider": "~2.0"
+        "woothemes/flexslider": "~2.0",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "require-dev": {
         "webflo/drupal-core-require-dev": "^8.7.0"
@@ -140,7 +146,9 @@
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/{$name}": ["type:drupal-drush"]
+            "drush/Commands/{$name}": ["type:drupal-drush"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
         },
         "drupal-scaffold": {
             "initial": {
