@@ -30,19 +30,24 @@
         {
             "type": "vcs",
             "url": "https://github.com/borisay/fibonacci_light.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/borisay/ecology.git"
         }
     ],
     "require": {
         "php": ">=7.1",
+        "borisay/ecology": "dev-master",
         "borisay/fibonacci_light": "dev-master",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/addtocalendar": "^3.1",
-        "drupal/admin_toolbar": "1.x-dev",
+        "drupal/admin_toolbar": "^2.0",
         "drupal/asset_injector": "^2.4",
-        "drupal/auto_entitylabel": "^2.1@beta",
-        "drupal/better_exposed_filters": "^3.0@alpha",
+        "drupal/auto_entitylabel": "^3.0",
+        "drupal/better_exposed_filters": "^4.0",
         "drupal/bibcite": "^1.0@alpha",
         "drupal/block_class": "^1.0",
         "drupal/bootstrap": "^3.20",
@@ -77,7 +82,7 @@
         "drupal/migrate_upgrade": "^3.0",
         "drupal/paragraphs": "^1.8",
         "drupal/pathauto": "^1.4",
-        "drupal/radix": "4.x-dev",
+        "drupal/radix": "^4.6",
         "drupal/radix_layouts": "^4.1",
         "drupal/redirect": "^1.4",
         "drupal/responsive_slideshow": "^1.2",
@@ -96,6 +101,7 @@
         "drupal/views_templates": "^1.0@alpha",
         "drupal/webform": "^5.2",
         "drupal/webform_views": "^5.0@alpha",
+        "drush/drush": "^9.0.0",
         "twbs/bootstrap-sass": "^3.4",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
